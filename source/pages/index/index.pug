@@ -1,8 +1,11 @@
 extends ../base
+
+include ../../common.blocks/page/_left
+include ../../common.blocks/page/_right
+
 block title
   | Portfolio
 block main
-  .left
-    h1 page index-pugsad
-  .right
-    h1 page index-pugsad
+  .page
+    +left
+    +right
