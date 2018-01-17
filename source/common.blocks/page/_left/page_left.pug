@@ -1,0 +1,11 @@
+include ../../circle/circle.pug
+include ../../nameSurname/_name/nameSurname_name.pug
+include ../../nameSurname/_surname/nameSurname_surname.pug
+include ../../nameSurname/_qualification/nameSurname_qualification.pug
+
+mixin left(text)
+  .page_left
+    +circle
+    +nameSurname_name("NAME HERE")
+    +nameSurname_surname("SURNAME")
+    +nameSurname_qualification("GRAPHIC DESIGNER")
