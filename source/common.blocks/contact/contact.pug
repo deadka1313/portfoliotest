@@ -1,0 +1,18 @@
+mixin contact(address, email, phone, website)
+  .contact_all
+    .contact_icon
+      include PhoneIcon.svg
+    .contact_title= "CONTACT"
+    .contact_line
+    .contact_address
+      .contact_address__left= "ADDRESS"
+      .contact_address__right= address
+    .contact_e-mail
+      .contact_e-mail__left= "E-MAIL"
+      .contact_e-mail__right= email
+    .contact_phone
+      .contact_phone__left= "PHONE"
+      .contact_phone__right= phone
+    .contact_website
+      .contact_website__left= "WEBSITE"
+      .contact_website__right= website
