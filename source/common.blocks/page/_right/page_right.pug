@@ -1,9 +1,17 @@
 include ../../education/education.pug
+include ../../education/education_degree.pug
 include ../../experience/experience.pug
+include ../../experience/experience_company.pug
 include ../../software/software.pug
 
 mixin right
   .page_right    
     +education
+    +education_degree("MASTER DEGREE", "// Feb 2011 - Jun 2014", "UNIVERSITY NAME", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.")
+    +education_degree("MASTER DEGREE", "// Feb 2011 - Jun 2014", "UNIVERSITY NAME", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.")
+    +education_degree("MASTER DEGREE", "// Feb 2011 - Jun 2014", "UNIVERSITY NAME", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.")
     +experience
+    +experience_company("COMPANY NAME", "// Feb 2011 - Jun 2014", "YOUR JOB HERE", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.")
+    +experience_company("COMPANY NAME", "// Feb 2011 - Jun 2014", "YOUR JOB HERE", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.")
+    +experience_company("COMPANY NAME", "// Feb 2011 - Jun 2014", "YOUR JOB HERE", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.")
     +software
