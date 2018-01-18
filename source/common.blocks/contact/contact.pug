@@ -1,3 +1,5 @@
+include contact_main-block.pug
+
 mixin contact(address, email, phone, website)
   .contact_all
     .contact_icon
@@ -5,14 +7,10 @@ mixin contact(address, email, phone, website)
     .contact_title= "CONTACT"
     .contact_line
     .contact_address
-      .contact_address__left= "ADDRESS"
-      .contact_address__right= address
+     +contact_main-block("ADDRESS", address)
     .contact_e-mail
-      .contact_e-mail__left= "E-MAIL"
-      .contact_e-mail__right= email
+     +contact_main-block("E-MAIL", email)
     .contact_phone
-      .contact_phone__left= "PHONE"
-      .contact_phone__right= phone
+     +contact_main-block("PHONE", phone)
     .contact_website
-      .contact_website__left= "WEBSITE"
-      .contact_website__right= website
+     +contact_main-block("WEBSITE", website)
