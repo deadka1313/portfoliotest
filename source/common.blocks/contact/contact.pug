@@ -1,16 +1,17 @@
 include contact_main-block.pug
 
 mixin contact(address, email, phone, website)
-  .contact_all
-    .contact_icon
-      include PhoneIcon.svg
-    .contact_title= "CONTACT"
-    .contact_line
+  .contact
+    .contact_all
+      .contact_icon
+        include PhoneIcon.svg
+      .contact_title= "CONTACT"
+      .contact_line
     .contact_address
-     +contact_main-block("ADDRESS", address)
+      +contact_main-block("ADDRESS", address)
     .contact_e-mail
-     +contact_main-block("E-MAIL", email)
+      +contact_main-block("E-MAIL", email)
     .contact_phone
-     +contact_main-block("PHONE", phone)
+      +contact_main-block("PHONE", phone)
     .contact_website
-     +contact_main-block("WEBSITE", website)
+      +contact_main-block("WEBSITE", website)
