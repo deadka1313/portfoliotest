@@ -1,9 +1,10 @@
 mixin skills(creativeNumber, teamworkNumber, innovateNumber, communikationNumber)
-  .skills_all
-    .skills_icon
-      include SKILL_ICON.svg
-    .skills_title= "SKILLS"
-    .skills_line
+  .skills
+    .skills_all
+      .skills_icon
+        include SKILL_ICON.svg
+      .skills_title= "SKILLS"
+      .skills_line
     .skills_creative= "CREATIVE"
     .skills_diagram
       - for (var x = 0; x < creativeNumber; x++)
