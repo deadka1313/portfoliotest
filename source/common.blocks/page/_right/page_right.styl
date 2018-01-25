@@ -1,7 +1,13 @@
 @import "../../education/education.styl"
 @import "../../experience/experience.styl"
 @import "../../software/software.styl"
-.page_right
-  float right
-  width 56.39%
-  margin-left 6.77%
+
+@media only screen and (min-width: 1036px) 
+  .page_right
+    float right
+    margin-left 6.77%
+    width 56.39%
+
+@media only screen and (max-width: 1035px) 
+  .page_right
+    margin auto
