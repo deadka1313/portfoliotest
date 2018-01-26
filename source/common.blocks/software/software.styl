@@ -1,5 +1,4 @@
 .software
-  //margin-bottom 26px
   &_icon
     width 11.76%
     svg 
@@ -31,28 +30,40 @@
     margin-bottom 28px
 
   &_name-program
-    &__left  
-    &__right  
-      font-size: 28.33px
-      display inline-block
-      margin-bottom 15px
-    &__left  
-      margin-left 1.43%
-      width 54%
-    
-  &_program-block  
     &__left
     &__right
-      background secondeColor
-      height 24px
-      width 43.9%
-      display inline-block
-      margin-bottom 21px
+      padding-left 2.58%
+      font-size: 28.33px
+      margin-bottom 15px
+      
+  &_program-block 
     &__left
-      margin-left 1.1%
-    &__right 
-      margin-left 10.22%
+    &__right
+      height 24px
+      width 87.8%
+      background secondeColor
+      margin-bottom 25px
 
     &__inside
       background mainColor
       height 100%
+
+@media only screen and (min-width: 470px) 
+  .software
+    &_block
+      &__left
+        width 50%
+        float left
+      &__right
+        width 50%
+        float right
+
+    &_name-program
+      &__right
+        margin-left 9.58%
+      
+    &_program-block 
+      &__left      
+        margin-left 2.29%
+      &__right
+        margin-left 11.56%

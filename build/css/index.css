@@ -19,7 +19,6 @@ body {
 .page {
   width: 90.48%;
   max-width: 1366px;
-  min-width: 474px;
   margin: 0 auto;
   margin-top: 42px;
   overflow: hidden;
@@ -376,31 +375,39 @@ body {
 }
 .software_name-program__left,
 .software_name-program__right {
+  padding-left: 2.58%;
   font-size: 28.33px;
-  display: inline-block;
   margin-bottom: 15px;
-}
-.software_name-program__left {
-  margin-left: 1.43%;
-  width: 54%;
 }
 .software_program-block__left,
 .software_program-block__right {
-  background: #e6e6e6;
   height: 24px;
-  width: 43.9%;
-  display: inline-block;
-  margin-bottom: 21px;
-}
-.software_program-block__left {
-  margin-left: 1.1%;
-}
-.software_program-block__right {
-  margin-left: 10.22%;
+  width: 87.8%;
+  background: #e6e6e6;
+  margin-bottom: 25px;
 }
 .software_program-block__inside {
   background: #3d6cb0;
   height: 100%;
+}
+@media only screen and (min-width: 470px) {
+  .software_block__left {
+    width: 50%;
+    float: left;
+  }
+  .software_block__right {
+    width: 50%;
+    float: right;
+  }
+  .software_name-program__right {
+    margin-left: 9.58%;
+  }
+  .software_program-block__left {
+    margin-left: 2.29%;
+  }
+  .software_program-block__right {
+    margin-left: 11.56%;
+  }
 }
 @media only screen and (min-width: 1036px) {
   .page_right {
